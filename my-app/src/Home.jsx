@@ -14,14 +14,16 @@ export default function Home(){
 
         return (
             <>
-                <h1>Login</h1>
+                <h1>Spotify Imposter</h1>
                 <div>
                     <button type="button" onClick={handleClick}>
                         Login
                     </button>
                 </div>
                 <div>
-                    <a href={loginUrl} id="signInButton">Sign in with Spotify!</a>
+                    <button type="button" onClick={() => window.location.href = loginUrl}>
+                        Sign in with Spotify!
+                    </button>
                 </div>
             </>
         );

@@ -4,6 +4,7 @@ import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 
 import Home from "./Home"
 import Lobby from "./Lobby"
+import Waiting from "./Waiting"
 
 export default class App extends React.Component{
   render(){
@@ -12,6 +13,7 @@ export default class App extends React.Component{
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Lobby" element={<Lobby />} />
+          <Route path="/Waiting" element={<Waiting />} />
         </Routes>
       </Router>
     )
